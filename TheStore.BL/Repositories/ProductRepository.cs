@@ -1,18 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TheStore.BL.Entities;
 
-namespace TheStore.BL
+namespace TheStore.BL.Repositories
 {
-    public class Product
+    public class ProductRepository
     {
-        public int Id { get; set; }
-
-        public string Name { get; set; }
-
-        public string Description { get; set; }
-
-        public decimal price { get; set; }
 
         //Save
         public bool Save(Product newProduct)

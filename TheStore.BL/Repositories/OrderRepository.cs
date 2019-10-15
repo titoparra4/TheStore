@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TheStore.BL.Entities;
 
-namespace TheStore.BL
+namespace TheStore.BL.Repositories
 {
-    public class Order
+    public class OrderRepository
     {
-        public int Id { get; set; }
-
-        public DateTimeOffset Date { get; set; }
-
         //Save
         public bool Save(Order newOrder)
         {

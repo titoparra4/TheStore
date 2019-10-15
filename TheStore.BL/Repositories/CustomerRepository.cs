@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TheStore.BL.Entities;
 
-namespace TheStore.BL
+namespace TheStore.BL.Repositories
 {
-    public class Customer
+    public class CustomerRepository
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-
-        public string Email { get; set; }
-
         //Save
         public bool Save(Customer newCustomer)
         {
@@ -34,6 +30,5 @@ namespace TheStore.BL
         {
             return true;
         }
-                
     }
 }
